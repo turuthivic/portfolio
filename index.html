@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Turuthi — Senior Rails Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">VT</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Senior Software Engineer</p>
+        <h1 class="hero-name">Victor Turuthi</h1>
+        <p class="hero-tagline">Ruby on Rails &amp; Fintech</p>
+        <p class="hero-bio">
+          Senior Rails engineer with 6+ years building production fintech systems. I've spent my
+          career in payments — designing payment integrations, building reliable backend infrastructure,
+          and owning systems end-to-end from architecture through to production support. I care about
+          code quality, long-term maintainability, and raising the level of the teams I work in.
+        </p>
+        <div class="hero-links">
+          <a href="mailto:turuthivictor9@gmail.com" class="btn btn-primary">Get in touch</a>
+          <a href="https://linkedin.com/in/victor-turuthi" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/vturuthi" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="hero-location">
+          <span class="location-dot"></span> Nairobi, Kenya
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-bar">
+    <div class="container">
+      <div class="skills-grid">
+        <div class="skill-tag">Ruby on Rails</div>
+        <div class="skill-tag">PostgreSQL</div>
+        <div class="skill-tag">Redis</div>
+        <div class="skill-tag">AWS</div>
+        <div class="skill-tag">Hotwire</div>
+        <div class="skill-tag">REST APIs</div>
+        <div class="skill-tag">Docker</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">LLM Integration</div>
+        <div class="skill-tag">CI/CD</div>
+        <div class="skill-tag">Serverless</div>
+        <div class="skill-tag">Terraform</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-company">Finplus Group Limited</h3>
+              <p class="timeline-role">Software Engineer</p>
+            </div>
+            <span class="timeline-date">Jan 2021 – Present</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Built and maintained complex Rails applications in a fintech SaaS environment, serving 1,000–10,000 active users across multiple SACCO institutions — owning features from design through to production support</li>
+            <li>Architected a payment broker service consolidating multiple third-party payment provider integrations into a single reliable backend layer — reduced server costs by over 50% and significantly improved uptime</li>
+            <li>Optimised database performance using PostgreSQL and Redis (ElastiCache), eliminating N+1 queries and reducing latency across high-traffic payment endpoints</li>
+            <li>Migrated background job processing to a serverless architecture (AWS Lambda, SQS), cutting processing time by over 60% and infrastructure costs by 30%</li>
+            <li>Upgraded legacy Rails applications through multiple major versions, managing breaking changes and reducing accumulated technical debt</li>
+            <li>Established CI/CD pipelines with automated linting and security scanning (Brakeman)</li>
+            <li>Mentored junior engineers and contributed to architectural decisions and technology proposals</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-company">Cyberaskari Limited</h3>
+              <p class="timeline-role">Software Engineer &amp; Co-founder</p>
+            </div>
+            <span class="timeline-date">May 2018 – Dec 2020</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Engineered a Rails-based SaaS management system from inception to launch, serving over 2,400 active users and automating 90% of administrative reporting — reducing manual data entry by 30 hours per week</li>
+            <li>Owned the full product lifecycle for 3+ major applications — API design, data modelling, frontend integration, and CI/CD — cutting average feature delivery time by 25%</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Cerebral Malaria RAG</h3>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>ChromaDB</span>
+              <span>Ollama</span>
+              <span>HuggingFace</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A retrieval-augmented generation system for medical research. Built a pipeline to ingest and
+            embed research literature into ChromaDB, enabling semantic search and AI-powered Q&amp;A over
+            documents using local LLMs via Ollama and a Gradio web interface.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">Axiom</h3>
+            <div class="project-tags">
+              <span>Rails</span>
+              <span>Hotwire</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A payment and accounting application recording real-time payments and generating periodic
+            reports in XLS format.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3 class="project-name">SpleetIt</h3>
+            <div class="project-tags">
+              <span>Rails</span>
+              <span>Python</span>
+              <span>Hotwire</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            A web app that separates music into stems (vocals, drums) using Spleeter. Features
+            drag-and-drop uploads, stem playback, and downloads.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="speaking">
+    <div class="container">
+      <h2 class="section-title">Speaking</h2>
+
+      <div class="speaking-grid">
+        <article class="speaking-card">
+          <div class="speaking-year">2024 &amp; 2025</div>
+          <div class="speaking-body">
+            <h3>RubyConf Africa</h3>
+            <p>Selected to speak twice at one of the continent's leading Ruby developer conferences.</p>
+            <a href="https://rubyconf.africa/speakers/victor-turuthi" class="speaking-link" target="_blank" rel="noopener">rubyconf.africa/speakers/victor-turuthi</a>
+          </div>
+        </article>
+
+        <article class="speaking-card">
+          <div class="speaking-year">2024</div>
+          <div class="speaking-body">
+            <h3>DroidconKE &amp; FlutterconfKE</h3>
+            <p>Delivered a talk on Rails Hotwire Native for Android development, bridging the Rails and mobile development communities.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-detail">
+        <div class="skill-group">
+          <h4>Languages &amp; Frameworks</h4>
+          <p>Ruby on Rails · Ruby · JavaScript · Python · Kotlin · React · Hotwire / Stimulus</p>
+        </div>
+        <div class="skill-group">
+          <h4>Data &amp; Infrastructure</h4>
+          <p>PostgreSQL · Redis · AWS EC2 · AWS S3 · AWS RDS · AWS Lambda · AWS SQS · ElastiCache · Elastic Beanstalk · Terraform · Docker</p>
+        </div>
+        <div class="skill-group">
+          <h4>Engineering Practices</h4>
+          <p>REST API Design · Object-Oriented Design · CI/CD · Serverless Architecture · Payment Systems · Brakeman · Git · Agile</p>
+        </div>
+        <div class="skill-group">
+          <h4>AI &amp; ML</h4>
+          <p>LLM Integration (OpenAI, Claude) · ChromaDB · HuggingFace · Ollama</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Open to senior backend and Rails engineering roles — especially in fintech or payments.</p>
+      <div class="contact-links">
+        <a href="mailto:turuthivictor9@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">turuthivictor9@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/victor-turuthi" class="contact-item" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/victor-turuthi</span>
+        </a>
+        <a href="tel:+254702550547" class="contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+254 702 550 547</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Victor Turuthi &mdash; Nairobi, Kenya</p>
+    </div>
+  </footer>
+</body>
+</html>
